@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Name">
+        </div>
+
+        <div>
+            <label for="ph">Phone</label>
+            <input id="ph" type="tel" placeholder="Enter Phone">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id ="email" type="email" placeholder="Enter your Email">
+        </div>
+
+        <!-- password -->
+        <div>
+           <label for="pass">Password</label>
+           <input type="password" id="pass" placeholder="Enter password" required>
+        </div>
+
+        <!-- date -->
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob">
+        </div>
+
+        <!-- select dropdown -->
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- radio button -->
+        <div>
+            <p>Description plan</p>
+            <input id="basic" type="radio" name="subscription" value="basic">
+            <label for="basic">Basic</label>
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+            <input id="vip" type="radio" name="subscription" value="vip">
+            <label for="vip">VIP</label>
+        </div>
+
+        <!-- checkboxes -->
+        <div>
+            <input type="checkbox" id="terms">
+            <label for="terms">Terms</label>
+            <input type="checkbox" id="conditions">
+            <label for="conditions">Conditions</label>
+        </div>
+
+        <!-- text area -->
+         <div>
+         <label for="comments">Comments</label>
+         <textarea name="comments" id="comments" rows="4"></textarea>
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+</body>
+</html>

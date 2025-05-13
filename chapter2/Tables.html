@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif; /* Sets a clean and modern font */
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Adds padding around the content */
+}
+
+h1 {
+    text-align: center; /* Centers the heading */
+    color: #333; /* Dark gray color for the heading */
+}
+
+table {
+    width: 100%; /* Table takes full width */
+    border-collapse: collapse; /* Removes space between cells */
+    margin-top: 20px; /* Adds space above the table */
+}
+
+thead {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color for header */
+}
+
+th, td {
+    padding: 12px; /* Adds padding to table cells */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid #ddd; /* Adds a light gray bottom border to rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlights row on hover */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white; /* White background for odd rows */
+}
+
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <!-- Table head-->
+             <tr>
+                <!--Table head-->
+                <th>Name</th> <!--Table Header-->
+                <th>Role</th>
+                <th>Salary</th> 
+             </tr>
+        </thead>
+        <tbody><!--Table body-->
+            <tr>
+                <td>Pranathi</td><!--Table Data-->
+                <td>Software Developer</td>
+                <td>$70000</td>
+            </tr>
+            <tr>
+                <td>Sutha</td>
+                <td>Business</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Prasanna</td>
+                <td>PA</td>
+                <td>$7000</td>
+            </tr>
+            <tr>
+                <td>Aarthi</td>
+                <td>waste fellow</td>
+                <td>$00</td>
+            </tr>
+            <tr>
+                <td>Thank</td>
+                <td colspan = "2">You</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

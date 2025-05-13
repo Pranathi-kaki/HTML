@@ -1,0 +1,141 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff3f3f;
+    padding: 10px 30px;  /* Adjusted padding */
+    height: 50px;  /* Increased header height */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 30px;  /* Slightly increased logo size */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: #ff3f3f;
+}
+
+/* Main section styling */
+main {
+    text-align: center;
+    color: white;
+}
+
+main section:first-of-type {
+    padding: 80px 20px;  /* Reduced padding */
+    background: url('./background_img.avif') no-repeat center center;
+    background-size: cover;  /* Ensures background image covers full area */
+    position: relative;
+    min-height: 65vh;  /* Reduced background height further to 60% of viewport height */
+    background-position: center center;
+}
+
+main img {
+    margin-top: 70px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+main p {
+    font-size: 26px;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ff3f3f;
+    border-radius: 25px;
+    background-color: white;
+    color: #333;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff6666;
+    box-shadow: 0 0 8px rgba(255, 63, 63, 0.5);
+}
+
+/* Second section styling with red boxes */
+main section:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    background-color: white;
+    color: #333;
+}
+
+.red-box {
+    background-color: #ff3f3f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.red-box:hover {
+    transform: translateY(-5px);
+}
+
+.red-box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.red-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff3f3f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
